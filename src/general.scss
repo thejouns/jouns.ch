@@ -1,0 +1,35 @@
+@import url("https://use.typekit.net/dyt4phh.css");
+body,
+html {
+    background-color: #053131;
+}
+h1,
+h2,
+h3,
+h4 {
+    color: transparent;
+    background: linear-gradient(to right, #23d5ab, #23a6d5, #e73c7e, #ee7752, #ddd6f3);
+    background-clip: text;
+    animation: animate 20s ease-in-out infinite alternate;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+    @keyframes animate {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 0%;
+        }
+    }
+}
+h1 {
+    font-family: rig-solid-bold-outline, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25vw;
+}
+h2 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}

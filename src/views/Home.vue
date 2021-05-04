@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Jouns</h1>
+    <h2>oha krassi site bro!</h2>
+    <div class="cts-btns">
+      <blob-button></blob-button>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import BlobButton from "@/components/BlobButton.vue";
 export default {
-  name: "Home",
   components: {
-    HelloWorld,
+    BlobButton,
   },
 };
 </script>
+<style lang="scss">
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+</style>
