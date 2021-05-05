@@ -1,0 +1,13 @@
+<svg id="Flächen_Illu_Schwarz" data-name="Flächen Illu Schwarz" xmlns="http://www.w3.org/2000/svg" width="36.596" height="13.896" viewBox="0 0 36.596 13.896">
+  <g id="Flächen_Illu_Schwarz-2" data-name="Flächen Illu Schwarz" transform="translate(0 0)">
+    <g id="Illu">
+      <g id="Schwarz">
+        <rect id="Rechteck_2" data-name="Rechteck 2" width="2.789" height="0.837" transform="translate(17.542 6.529)" fill="#04192a"/>
+        <rect id="Rechteck_3" data-name="Rechteck 3" width="1.115" height="0.837" transform="translate(0 6.529)" fill="#04192a"/>
+        <rect id="Rechteck_4" data-name="Rechteck 4" width="1.115" height="0.837" transform="translate(35.481 6.529)" fill="#04192a"/>
+        <path id="Pfad_3" data-name="Pfad 3" d="M119.735,13.889a6.947,6.947,0,1,1,4.913-2.034A6.948,6.948,0,0,1,119.735,13.889Zm0-12.918a5.972,5.972,0,1,0,5.972,5.971A5.978,5.978,0,0,0,119.735.971Z" transform="translate(-110.723 0.006)" fill="#04192a"/>
+        <path id="Pfad_4" data-name="Pfad 4" d="M1204.485,13.892a6.948,6.948,0,1,1,5.785-10.8l-.812.542a5.972,5.972,0,1,0,0,6.613l.813.541A6.94,6.94,0,0,1,1204.485,13.892Z" transform="translate(-1175.625 0.003)" fill="#04192a"/>
+      </g>
+    </g>
+  </g>
+</svg>

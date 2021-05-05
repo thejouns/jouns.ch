@@ -28,8 +28,8 @@ export default {
 .bg-img {
   background-image: url("~@/assets/img/jouns.jpg");
   background-size: 190%;
-  background-position: (50% 90%);
-  opacity: 0.16n;
+  background-position: (50% 80%);
+  opacity: 0.16;
   height: 100vh;
   width: 100%;
   position: absolute;
