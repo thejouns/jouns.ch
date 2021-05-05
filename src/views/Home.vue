@@ -1,27 +1,60 @@
 <template>
-  <div class="home">
-    <h1>Jouns</h1>
-    <h2>oha krassi site bro!</h2>
-    <div class="cts-btns">
-      <blob-button></blob-button>
+<div class="wrapper">
+  <div class="bg-img"></div>
+    <div class="home">
+      <div class="home-txt">
+        <h1>Jouns</h1>
+        <h2>Hey! Ich bin Jonas und mache Videos, Bilder, Websites und so...</h2>
+      </div>
+      <div class="cta-btns">
+        <insta-blob></insta-blob>
+        <ocular-blob></ocular-blob>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import BlobButton from "@/components/BlobButton.vue";
+import InstaBlob from "@/components/InstaBlob.vue";
+import OcularBlob from "@/components/OcularBlob.vue";
 export default {
   components: {
-    BlobButton,
+    InstaBlob,
+    OcularBlob,
   },
 };
 </script>
 <style lang="scss">
+.bg-img {
+  background-image: url("~@/assets/img/jouns.jpg");
+  background-size: 190%;
+  background-position: (50% 90%);
+  opacity: 0.16n;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
 .home {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  z-index: 1;
+  .home-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+    margin: 0 4vw 0 4vw;
+    z-index: 1;
+  }
+  .cta-btns {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 </style>
