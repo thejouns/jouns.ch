@@ -1,10 +1,13 @@
 <template>
-<div class="wrapper">
-  <div class="bg-img"></div>
+  <div class="wrapper">
+    <div class="bg-img"></div>
     <div class="home">
       <div class="home-txt">
         <h1>Jouns</h1>
-        <h2>Hey! Ich bin Jonas und mache Videos, Bilder, Websites und so...</h2>
+        <h2>
+          Hey! Ich bin Jonas und mache Videos,<br />
+          Bilder, Websites und so...
+        </h2>
       </div>
       <div class="cta-btns">
         <insta-blob></insta-blob>
@@ -46,12 +49,12 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 75vh;
+    height: 65vh;
     margin: 0 4vw 0 4vw;
     z-index: 1;
   }
   .cta-btns {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
