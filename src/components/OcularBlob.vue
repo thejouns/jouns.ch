@@ -1,5 +1,8 @@
 <template>
-  <a href="https://ocular.ch/" target="_blank" class="blob-oc"></a>
+  <a href="https://ocular.ch/" target="_blank" class="blob-wrapper"
+    ><div class="blob-oc blob"></div>
+    <p>ocular.ch</p></a
+  >
 </template>
 
 <script>
@@ -10,22 +13,6 @@ export default {};
 $time: 20s;
 
 .blob-oc {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  width: 20vw;
-  height: 20vw;
-  overflow: hidden;
-  border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
-  background: linear-gradient(
-    to right,
-    #24d1a9,
-    #20a2d1,
-    #e73c7e,
-    #ee7752,
-    #b286db
-  );
-  background-size: 500% 100%;
   animation: blobber $time 0s linear infinite,
     cobler $time 0s linear infinite alternate;
 

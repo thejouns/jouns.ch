@@ -2,8 +2,11 @@
   <a
     href="https://www.instagram.com/joouuns/"
     target="_blank"
-    class="blob-inst"
-  ></a>
+    class="blob-wrapper"
+  >
+    <div class="blob-inst blob"></div>
+    <p>instagram</p></a
+  >
 </template>
 
 <script>
@@ -14,25 +17,8 @@ export default {};
 $time: 20s;
 
 .blob-inst {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  width: 20vw;
-  height: 20vw;
-  overflow: hidden;
-  border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
-  background: linear-gradient(
-    to right,
-    #24d1a9,
-    #20a2d1,
-    #e73c7e,
-    #ee7752,
-    #b286db
-  );
-  background-size: 500% 100%;
   animation: blobber $time -3.6s linear infinite,
     cobler $time 0s linear infinite alternate;
-
   &:after {
     content: "";
     display: block;

@@ -1,12 +1,11 @@
 @import url("https://use.typekit.net/dyt4phh.css");
 body,
 html {
-    background-color: #04192A;
+    background-color: #04192a;
 }
 h1,
 h2,
-h3,
-h4 {
+p {
     color: transparent;
     background: linear-gradient(to right, #23d5ab, #23a6d5, #e73c7e, #ee7752, #ddd6f3);
     background-clip: text;
@@ -33,4 +32,56 @@ h2 {
     font-weight: 500;
     font-style: normal;
     font-size: 4.5vw;
+}
+p {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3.5vw;
+}
+
+//Blobs
+.blob-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    .blob {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        width: 20vw;
+        height: 20vw;
+        overflow: hidden;
+        border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+        background: linear-gradient(to right, #24d1a9, #20a2d1, #e73c7e, #ee7752, #b286db);
+        background-size: 500% 100%;
+    }
+    p {
+        text-align: center;
+        margin-top: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 10rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    //Blobs
+    .blob-wrapper {
+
+        .blob {
+            width: 6rem;
+            height: 6rem;
+        }
+        p{
+            margin-top: 0.5rem;
+        }
+    }
 }
