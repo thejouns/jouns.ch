@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="home-wrapper">
     <article class="home-cover"></article>
     <div class="content-wrapper">
       <div class="home-title">
@@ -21,7 +21,7 @@
 export default {};
 </script>
 <style lang="scss">
-.wrapper {
+.home-wrapper {
   display: flex;
   padding: 0;
   margin: 0;
@@ -61,9 +61,8 @@ export default {};
   justify-content: space-around;
 }
 @media only screen and (max-width: 1024px) {
-  .wrapper {
+  .home-wrapper {
     background-position: center;
-    flex-direction: column;
     .content-wrapper {
       width: 100vw;
       height: 100vh;
@@ -78,7 +77,7 @@ export default {};
         }
       }
       .home-links {
-        margin: 10vh 7vw 10vh 0;
+        margin: 10vh 7vw 20vh 0;
         width: 100vw;
         padding: 0;
       }
