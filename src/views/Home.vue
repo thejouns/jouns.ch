@@ -5,15 +5,14 @@
         <source src="@/assets/vid/jouns_background.mp4" type="video/mp4" />
       </video>
     </article>
-    <div class="content">
+    <div class="content-wrapper">
+      <header>
+        <h2 class="jouns">jouns</h2>
+      </header>
       <div class="home-links">
         <router-link id="hlink" to="about">about</router-link>
         <a id="hlink" target="_blank" href="https://ocular.ch">work</a>
         <a id="hlink" href="mailto:jonas@ocular.ch">contact</a>
-      </div>
-      <div class="cta-btns">
-        <insta-blob></insta-blob>
-        <ocular-blob></ocular-blob>
       </div>
     </div>
   </div>
@@ -34,30 +33,51 @@ export default {};
       width: 100%;
       height: 100vh;
       left: 0;
+      top: 0;
+      bottom: 0;
       position: absolute;
       object-fit: cover;
       object-position: center;
       z-index: 0;
     }
   }
-  .content {
-    margin-top: 10vh;
-    height: 90vh;
-    min-width: 100%;
+  .content-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    z-index: 1;
+    header {
+      .jouns {
+        font-size: 3rem;
+        font-family: eurostile-extended, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.2rem;
+        font-style: normal;
+        z-index: 1;
+        color: #fff;
+        margin-left: 7vw;
+      }
+    }
     .home-links {
-      width: 80vw;
+      min-width: 100%;
+      width: 100vw;
+      height: 90vh;
       display: flex;
+      align-items: center;
       justify-content: space-around;
-      #hlink {
+      a {
+        button:focus {
+          outline: none;
+        }
         color: white;
         text-decoration: none;
-        mix-blend-mode:overlay;
         font-size: 12rem;
+        z-index: 1;
+        mix-blend-mode: difference;
+        filter: brightness(100%);
+        &:hover {
+          mix-blend-mode: hue;
+          color: rgb(81, 176, 214);
+        }
       }
     }
   }
