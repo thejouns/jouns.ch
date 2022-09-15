@@ -1,19 +1,20 @@
 @import url("https://use.typekit.net/dyt4phh.css");
 body,
 html {
-    overflow: hidden;
-    font-family: eurostile-extended, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    margin: 0;
+    background-color: #f5f4f3;
 }
 h1 {
-    font-size: 8vw;
-    font-family: eurostile-extended, sans-serif;
-    font-weight: 900;
-    letter-spacing: 1rem;
+    font-family: widescreen-mixed, sans-serif;
+    font-weight: 300;
     font-style: normal;
-    color: #eacc69;
+    font-size: 5vw;
+    color: #f5f4f3;
+    animation: fontWidth 2s ease-in infinite reverse;
+}
+@keyframes fontWidth {
+    0%{font-weight: 300;}
+    50%{font-weight: 900;}
+    100%{font-weight: 300;}
 }
 h2{
     font-size: 7vw;

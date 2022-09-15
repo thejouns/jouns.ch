@@ -1,64 +1,50 @@
 <template>
-  <div class="home-wrapper">
-    <article class="home-cover"></article>
-    <div class="content-wrapper">
-      <div class="home-title">
-        <h1 class="jouns">jouns</h1>
-        <a target="_blank" href="https://instagram.com/joouuns">instagram</a>
-      </div>
-      <div class="home-links">
-        <router-link class="routes" id="hlink" to="shots">shots</router-link>
-        <a class="routes" id="hlink" target="_blank" href="https://ocular.ch/filme"
-          >projects</a
-        >
-      </div>
+  <div class="home">
+    <div class="content">
+      <h1>directed by jouns</h1>
     </div>
-    <footer><p>© 2022 JOUNS</p></footer>
+    <video playsinline autoplay muted loop id="backgroundVid" poster="@/assets/img/poster.png">
+      <source src="@/assets/vid/Reel.mp4" type="video/mp4" />
+    </video>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  components: {},
+};
 </script>
 <style lang="scss">
-.home-wrapper {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  background-image: url(~@/assets/img/bg.jpg);
-  background-position-x: center;
-  background-position-y: 38%;
-  background-size: cover;
-}
-.content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20vh;
-  height: 100vh;
-  flex-direction: row;
-  .home-title {
-    height: 50vh;
+.home {
+  #backgroundVid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    margin-left: 7vw;
-    width: 40vw;
-    .jouns {
-      z-index: 1;
-      margin: 0;
-    }
+    align-items: center;
+    justify-content: center;
   }
 }
-.home-links {
-  min-width: 10vw;
-  width: 50vw;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  text-align: right;
-  padding-right: 40vw;
-  justify-content: space-around;
+@media only screen and (max-width: 1080px) {
+  .home{
+    #backgroundVid {
+      height: 120vh;
+    }
+    .content{
+      h1{
+        font-size: 7vw;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 1024px) {
   .home-wrapper {
