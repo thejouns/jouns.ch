@@ -1,27 +1,49 @@
 <template>
   <div class="home">
-    <h1>Jouns</h1>
-    <h2>oha krassi site bro!</h2>
-    <div class="cts-btns">
-      <blob-button></blob-button>
+    <div class="content">
+      <h1>directed by jouns</h1>
     </div>
+    <video playsinline autoplay muted loop id="backgroundVid" poster="@/assets/img/poster.png">
+      <source src="@/assets/vid/Reel.mp4" type="video/mp4" />
+    </video>
   </div>
 </template>
 
 <script>
-import BlobButton from "@/components/BlobButton.vue";
 export default {
-  components: {
-    BlobButton,
-  },
+  components: {},
 };
 </script>
 <style lang="scss">
 .home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  #backgroundVid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .home{
+    #backgroundVid {
+      height: 120vh;
+    }
+    .content{
+      h1{
+        font-size: 7vw;
+      }
+    }
+  }
 }
 </style>
