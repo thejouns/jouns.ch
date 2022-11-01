@@ -1,8 +1,19 @@
 @import url("https://use.typekit.net/dyt4phh.css");
 body,
 html {
-    background-color: #f5f4f3;
-}
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    ::-webkit-scrollbar{
+        width: 0.5rem;
+        background-color: black;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #ebebeb;
+        border-radius: 15px;
+
+    }
+}   
 h1 {
     font-family: widescreen-mixed, sans-serif;
     font-weight: 300;
@@ -49,7 +60,7 @@ a {
         text-decoration: underline;
     }
 }
-button:focus {
+button:focus, a:focus {
     outline: none;
 }
 
