@@ -6,9 +6,9 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     projects:[
-      "https://www.youtube-nocookie.com/embed/TdJ_0BaWqmI",
+      "https://www.youtube-nocookie.com/embed/a3eobSkWqfo",
       "https://www.youtube-nocookie.com/embed/EE4Mr78Wh-E",
-      "https://www.youtube-nocookie.com/embed/40MYU1QIPeo"
+      "https://www.youtube-nocookie.com/embed/TdJ_0BaWqmI",
 
     ]
   },

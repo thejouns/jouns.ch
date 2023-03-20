@@ -18,47 +18,22 @@ h1 {
     font-family: widescreen-mixed, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 5vw;
+    font-size: 7vw;
     color: #f5f4f3;
     animation: fontWidth 2s ease-in infinite reverse;
+    margin: 0 0 1vw 0;
+}
+a{
+    font-family: widescreen-uex, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #f5f4f3;
 }
 @keyframes fontWidth {
     0%{font-weight: 300;}
     50%{font-weight: 900;}
     100%{font-weight: 300;}
-}
-h2{
-    font-size: 7vw;
-    color: #eacc69;
-    margin: 0;
-}
-.routes {
-    color: #eeeeee;
-    text-decoration: none;
-    font-size: 5vw;
-    font-family: eurostile-extended, sans-serif;
-    font-weight: 700;
-    letter-spacing: 00.5rem;
-    z-index: 1;
-    mix-blend-mode: color-dodge;
-    filter: brightness(100%);
-    &:hover {
-        mix-blend-mode: normal;
-        color: #eacc69;
-        text-decoration: none;
-    }
-}
-a {
-    text-decoration: none;
-    color: #eee;
-    font-family: balboa, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 2vw;
-    letter-spacing: 0.1rem;
-    &:hover {
-        text-decoration: underline;
-    }
 }
 button:focus, a:focus {
     outline: none;
