@@ -46,28 +46,4 @@ export default {
     }
   }
 }
-@media only screen and (max-width: 1024px) {
-  .home-wrapper {
-    background-position: center;
-    .content-wrapper {
-      width: 100vw;
-      height: 100vh;
-      flex-direction: column;
-      justify-content: start;
-      .home-title {
-        padding: 2rem;
-        height: 50vh;
-        width: 100vw;
-        .jouns {
-          margin: 0;
-        }
-      }
-      .home-links {
-        margin: 10vh 7vw 20vh 0;
-        width: 100vw;
-        padding: 0;
-      }
-    }
-  }
-}
 </style>
