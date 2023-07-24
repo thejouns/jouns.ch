@@ -1,8 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Projekte from "../views/ProjectsSite.vue"
-
+import Projekte from "../views/ProjectsSite.vue";
 
 Vue.use(VueRouter);
 
@@ -10,19 +9,30 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: Home
   },
   {
     path: "/projects",
     name: "Projekte",
-    component: Projekte,
-  },
+    component: Projekte
+  }
 ];
 
 const router = new VueRouter({
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        behavior: "smooth"
+      };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
+  
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 
 export default router;
