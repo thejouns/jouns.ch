@@ -12,17 +12,14 @@
       <source src="@/assets/vid/Reel.mp4" type="video/mp4" />
     </video>
     <landing-vue></landing-vue>
-    <projects-vue></projects-vue>
   </div>
 </template>
 
 <script>
 import LandingVue from "@/components/Landing.vue";
-import ProjectsVue from "@/components/Projects.vue";
 export default {
   components: {
     LandingVue,
-    ProjectsVue
   },
   data() {
     return {
@@ -55,6 +52,7 @@ export default {
   flex-direction: column;
   #backgroundVid {
     object-fit: cover;
+    filter: saturate(0);
     width: 100vw;
     height: 100vh;
     scale: 1.05;

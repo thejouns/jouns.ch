@@ -4,49 +4,56 @@ html {
     background-color: transparent;
     margin: 0px;
     padding: 0px;
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         width: 0.5rem;
         background-color: black;
     }
-    ::-webkit-scrollbar-thumb{
+    ::-webkit-scrollbar-thumb {
         background-color: #ebebeb;
         border-radius: 15px;
-
     }
-}   
+}
 h1 {
-    font-family: widescreen-mixed, sans-serif;
+    font-family: "futura-pt", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 7vw;
+    text-transform: uppercase;
     color: #f5f4f3;
-    animation: fontWidth 2s ease-in infinite reverse;
     margin: 0 0 1vw 0;
 }
-a{
-    font-family: widescreen-uex, sans-serif;
+a {
+    font-family: "futura-pt", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
     font-size: 1.5rem;
     color: #f5f4f3;
 }
 @keyframes fontWidth {
-    0%{font-weight: 300;}
-    50%{font-weight: 900;}
-    100%{font-weight: 300;}
+    0% {
+        font-weight: 300;
+    }
+    50% {
+        font-weight: 900;
+    }
+    100% {
+        font-weight: 300;
+    }
 }
-button:focus, a:focus {
+button:focus,
+a:focus {
     outline: none;
 }
 
 @media only screen and (max-width: 1024px) {
-    h1{
+    h1 {
         font-size: 23vw;
     }
-    .routes{
+    .routes {
         font-size: 12vw;
     }
-    a{
+    a {
         font-size: 5vw;
     }
 }
