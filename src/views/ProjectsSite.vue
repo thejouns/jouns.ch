@@ -9,7 +9,7 @@
 import HeaderVue from "@/components/Header.vue";
 import ProjectVue from "@/components/Projects.vue";
 export default {
-  title: "Meine Projekte - Jouns",
+  title: "Jouns - Projekte",
   name: "ProjectsSite",
   components: {
     HeaderVue,

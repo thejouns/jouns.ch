@@ -18,6 +18,7 @@
 <script>
 import LandingVue from "@/components/Landing.vue";
 export default {
+  title: "Jouns - Portfolio",
   components: {
     LandingVue,
   },

@@ -69,7 +69,7 @@ header {
     justify-content: space-around;
     .logo-container {
       justify-content: center;
-      padding-left: 7.5rem;
+      padding: 0;
       .logo {
         margin-left: 0vw;
       }

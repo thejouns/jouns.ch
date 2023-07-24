@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/dyt4phh.css");
 body,
 html {
+    font-family: "futura-pt", sans-serif;
     background-color: transparent;
     margin: 0px;
     padding: 0px;
@@ -21,6 +22,13 @@ h1 {
     text-transform: uppercase;
     color: #f5f4f3;
     margin: 0 0 1vw 0;
+}
+h2{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2vw;
+    color: #f5f4f3;
 }
 a {
     font-family: "futura-pt", sans-serif;
