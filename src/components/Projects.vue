@@ -96,9 +96,13 @@ export default {
       /* &:nth-child(2n + 2) {
         background-color: #eeeeee;
       }*/
+      &:focus-visible{
+        outline: solid 1px;
+      }
       &:hover {
         .project-img {
           filter: saturate(1);
+          
         }
       }
     }
