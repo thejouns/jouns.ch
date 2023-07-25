@@ -1,18 +1,15 @@
 <template>
   <div id="projects">
-    <header-vue></header-vue>
     <project-vue></project-vue>
   </div>
 </template>
 
 <script>
-import HeaderVue from "@/components/Header.vue";
 import ProjectVue from "@/components/Projects.vue";
 export default {
   title: "Jouns - Projekte",
   name: "ProjectsSite",
   components: {
-    HeaderVue,
     ProjectVue
   },
   computed: {

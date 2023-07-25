@@ -14,6 +14,7 @@ Vue.use(VueSmoothScroll, {
 
 Vue.config.productionTip = false;
 
+
 new Vue({
   router,
   store,
