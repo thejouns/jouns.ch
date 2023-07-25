@@ -109,11 +109,11 @@ header {
     flex: 4;
     display: flex;
     padding-left: 5vw;
-    padding-top: 1rem;
+    padding-top: 0.2vw;
     .logo {
       font-size: 2.5rem;
       font-weight: 700;
-      width: 3rem;
+      width: 5vh;
       fill: #f5f4f3;
     }
   }
