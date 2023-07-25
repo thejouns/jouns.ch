@@ -19,10 +19,10 @@
 import AboutContent from "@/components/AboutContent.vue";
 
 export default {
-  title: "About - Jouns",
+  title: "Jouns - About",
   components: {
-    AboutContent
-  }
+    AboutContent,
+  },
 };
 </script>
 
@@ -41,6 +41,13 @@ export default {
     top: 0;
     left: 0;
     z-index: -1;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .about {
+    #backgroundVid {
+      height: 120vh;
+    }
   }
 }
 </style>

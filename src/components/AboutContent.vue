@@ -1,6 +1,6 @@
 <template>
   <div class="about-content">
-    <div class="pb"><img src="" alt="" /></div>
+    <div class="pb"><img src="@/assets/img/pb.jpg" alt="" /></div>
     <div class="bio">
       <h3>JOUNS</h3>
       <p>
@@ -8,9 +8,9 @@
         Schon früh nahm er seine erste Kamera in die Hand, um alles zu filmen
         und zu fotografieren, was ihm vor die Linse lief. Im Jahr 2020 gründete
         Jonas zusammen mit den Gleichgesinnten Andrin Schranz und Cedric Ribi
-        das "Ocular Collective" (ocular.ch). Seitdem hat Jonas bereits
-        zahlreiche Musikvideos, Dokumentarfilme und sonstige Kurzfilme aller Art
-        realisiert.
+        das "Ocular Collective" (<a target="_blank" href="https://ocular.ch">ocular.ch</a>).
+        Seitdem hat Jonas bereits zahlreiche Musikvideos, Dokumentarfilme und
+        sonstige Kurzfilme aller Art realisiert.
       </p>
       <div class="sm-cta">
         <a class="icon" href="https://instagram.com/joouuns" target="_blank"
@@ -45,19 +45,19 @@
           </svg>
         </a>
         <a class="icon" href="mailto:info@ocular.ch" target="_blank">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32.25"
-              height="32.25"
-              viewBox="0 0 32.25 32.25"
-            >
-              <path
-                id="mail"
-                d="M16.125,0A16.125,16.125,0,1,0,32.25,16.125,16.114,16.114,0,0,0,16.125,0Zm7.812,21.734H9.815a1.9,1.9,0,0,1-1.9-1.9V12.519a1.818,1.818,0,0,1,.6-1.4h0a1.9,1.9,0,0,1,1.3-.5h12.72a2.109,2.109,0,0,1,1.3.5h0a1.977,1.977,0,0,1,.6,1.4v4.507a.5.5,0,1,1-1,0V12.519a.6.6,0,0,0-.1-.4l-6.21,4.707a1.819,1.819,0,0,1-2,0l-6.21-4.707c-.1.1-.1.2-.1.4v7.311a.9.9,0,0,0,.9.9H23.837a.473.473,0,0,1,.5.5C24.338,21.533,24.137,21.834,23.937,21.734Zm-8.213-5.609L9.815,11.618h12.62l-5.909,4.507A.606.606,0,0,1,15.724,16.125Z"
-                fill="#ebebeb"
-              />
-            </svg>
-          </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32.25"
+            height="32.25"
+            viewBox="0 0 32.25 32.25"
+          >
+            <path
+              id="mail"
+              d="M16.125,0A16.125,16.125,0,1,0,32.25,16.125,16.114,16.114,0,0,0,16.125,0Zm7.812,21.734H9.815a1.9,1.9,0,0,1-1.9-1.9V12.519a1.818,1.818,0,0,1,.6-1.4h0a1.9,1.9,0,0,1,1.3-.5h12.72a2.109,2.109,0,0,1,1.3.5h0a1.977,1.977,0,0,1,.6,1.4v4.507a.5.5,0,1,1-1,0V12.519a.6.6,0,0,0-.1-.4l-6.21,4.707a1.819,1.819,0,0,1-2,0l-6.21-4.707c-.1.1-.1.2-.1.4v7.311a.9.9,0,0,0,.9.9H23.837a.473.473,0,0,1,.5.5C24.338,21.533,24.137,21.834,23.937,21.734Zm-8.213-5.609L9.815,11.618h12.62l-5.909,4.507A.606.606,0,0,1,15.724,16.125Z"
+              fill="#ebebeb"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -73,20 +73,53 @@ export default {};
   justify-content: center;
   align-items: center;
   height: 100vh;
-  .bio {
-    width: 30rem;
-    color: #f5f4f3;
-    p {
-      font-weight: 400;
+  .pb {
+    img {
+      height: 20rem;
+      border-radius: 20rem;
+      margin-right: 3vw;
     }
-    .sm-cta {
-        width: 15%;
-        display: flex;
+  }
+  .bio {
+    width: 33rem;
+    color: #f5f4f3;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: underline;
+    }
+  }
+  .sm-cta {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon {
+      svg {
+        width: 1.8rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    .pb {
+      img {
+        height: 60vw;
+      }
+    }
+    .bio {
+      text-align: center;
+      width: 80vw;
+      align-items: center;
+      .sm-cta {
         justify-content: space-between;
-        align-items: center;
-      .icon {
-        svg {
-          width: 1.8rem;
+        width: 20vw;
+        .icon {
+          svg {
+            width: 8vw;
+          }
         }
       }
     }

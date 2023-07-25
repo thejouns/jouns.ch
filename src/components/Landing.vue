@@ -51,7 +51,7 @@
 
 <script>
 export default {
-  name: "LandingVue"
+  name: "LandingVue",
 };
 </script>
 
@@ -119,6 +119,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     flex-direction: column;
     .sm-cta {
       padding-right: 5vw;
+      display: none;
       .social {
         align-self: center;
         padding: 0px;
@@ -126,6 +127,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     }
   }
   .centered {
+    padding-top: 5vh;
     .cta {
       justify-content: space-evenly;
       align-content: center;
