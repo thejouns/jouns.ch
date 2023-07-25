@@ -102,6 +102,7 @@ export default {
       &:hover {
         .project-img {
           filter: saturate(1);
+          scale: 1.005;
           
         }
       }
@@ -149,9 +150,13 @@ export default {
         }
       }
       .watchButton {
+        font-weight: 500;
         padding-top: 3rem;
         svg {
           width: 1rem;
+        }
+        &:hover{
+          text-decoration: underline;
         }
       }
     }

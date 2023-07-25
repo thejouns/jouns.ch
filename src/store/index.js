@@ -5,7 +5,7 @@ import EgauImg from "@/assets/img/tn/egau_tn.jpg";
 import tbslImg from "@/assets/img/tn/tbsl-tn.jpg";
 import nzImg from "@/assets/img/tn/jaru-nz.jpg";
 import NBImg from "@/assets/img/tn/NilsBuri-thumbnail.jpg";
-
+import friseImg from "@/assets/img/tn/frise-tn.jpg";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -15,7 +15,8 @@ export default new Vuex.Store({
         image: tbslImg,
         title: "the bittersweet life",
         rolls: [
-          { title: "Dokumentarfilm für:", name: "Ocular Collective <br><br>" },
+          { title: "Documentary for:", name: "Ocular Collective" },
+          {title: "Starring:", name: "Ara Ko<br><br>"},
           { title: "Interview & Director:", name: "Jonas Kunz" },
           {
             title: "Cinematography:",
@@ -31,7 +32,7 @@ export default new Vuex.Store({
         image: EgauImg,
         title: "Egau",
         rolls: [
-          { title: "Musikvideo für:", name: "Jule X & Nicky B Fly <br><br>" },
+          { title: "Musicvideo for:", name: "Jule X & Nicky B Fly <br><br>" },
           { title: "Director & Editor:", name: "Jonas Kunz" },
           { title: "Cinematographer:", name: "Andrin Schranz" },
           { title: "AC:", name: "Cedric Ribi" }
@@ -39,10 +40,19 @@ export default new Vuex.Store({
         video: "https://youtu.be/EE4Mr78Wh-E"
       },
       {
+        image: friseImg,
+        title: "frisä",
+        rolls: [
+          { title: "Shortfilm for:", name: "Ocular Collective" },
+          {title: "Starring:", name: "Luka Aeschlimann"}
+        ],
+        video: "https://youtu.be/T3vn5nujkn8"
+      },
+      {
         image: nzImg,
         title: "nüt ztüe",
         rolls: [
-          { title: "Musikvideo für:", name: "Jaru <br><br>" },
+          { title: "Musicvideo for:", name: "Jaru <br><br>" },
           { title: "Director & Editor:", name: "Jonas Kunz" },
           { title: "Cinematographer:", name: "Andrin Schranz" },
           { title: "PA:", name: "Luis Schneuwly" }
@@ -53,8 +63,8 @@ export default new Vuex.Store({
         image: NBImg,
         title: "Nils Buri",
         rolls: [
-          { title: "Dokumentarfilm für:", name: "Nils Buri <br><br>" },
-          { title: "Production:", name: "Ocular Collective" }
+          { title: "Documentary for:", name: "Nils Buri <br><br>" },
+          { title: "Production by:", name: "Ocular Collective" }
         ],
         video: "https://youtu.be/URoZHHvk4NQ"
       }
