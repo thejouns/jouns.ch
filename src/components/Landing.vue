@@ -100,6 +100,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
         align-items: center;
         transform: scale(1);
         transition-duration: 0.2s;
+        font-weight: 500;
         &:hover {
           transform: scale(1.07);
         }
