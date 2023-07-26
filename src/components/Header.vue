@@ -32,14 +32,12 @@
         </a>
       </div>
       <ul class="navbar" v-bind:class="{ navactive: toggleNav }">
-        <a class="rou-li" @click.native="navSlide()" href="/"
-          >HOME</a
+        <a class="rou-li" @click.native="navSlide()" href="/">HOME</a>
+        <router-link class="rou-li" @click.native="navSlide()" to="/projects"
+          >PROJECTS</router-link
         >
         <router-link class="rou-li" @click.native="navSlide()" to="/about"
           >ABOUT</router-link
-        >
-        <router-link class="rou-li" @click.native="navSlide()" to="/projects"
-          >PROJECTS</router-link
         >
       </ul>
 
@@ -64,7 +62,7 @@ export default {
     return {
       toggleNav: false,
       headerBoolean: false,
-      scrollPosition: null,
+      scrollPosition: null
     };
   },
   methods: {
@@ -76,14 +74,14 @@ export default {
         console.log("ayyyyo, ds isch gheimi nachricht ... pssshht!");
         this.headerBoolean = true;
       }
-    },
+    }
   },
   created() {
     window.addEventListener("load", this.checkRoute);
   },
   watch: {
-    $route: "checkRoute",
-  },
+    $route: "checkRoute"
+  }
 };
 </script>
 
@@ -225,8 +223,8 @@ header {
         margin-left: 0vw;
       }
     }
-    .navbar{
-      .rou-li{
+    .navbar {
+      .rou-li {
         font-size: 18vw;
         line-height: 130%;
       }
