@@ -1,7 +1,7 @@
 <template>
   <footer>
     <router-link class="rou-li" to="Imprint"
-      >Imprint</router-link
+      >Impressum</router-link
     >
     <p>&copy; 2023 Jonas Kunz</p>
   </footer>
