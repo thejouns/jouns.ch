@@ -14,8 +14,8 @@
         and photograph everything that caught his eye. In 2020, Jonas founded the
         "Ocular Collective" (
         <a target="_blank" href="https://ocular.ch">ocular.ch</a>
-        ) together with like-minded individuals Andrin Schranz and Cedric Ribi.
-        Since then, Jonas has already completed numerous music videos,
+        ) together with the like-minded Andrin Schranz and Cedric Ribi.
+        Since then, Jonas has already produced numerous music videos,
         documentaries, and other types of short films.
       </p>
 
