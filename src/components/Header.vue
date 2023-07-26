@@ -39,8 +39,8 @@
         <router-link class="rou-li" @click.native="navSlide()" to="/about"
           >ABOUT</router-link
         >
+        <footer-vue @click.native="navSlide()"></footer-vue>
       </ul>
-
       <div class="space"></div>
       <div
         class="burger"
@@ -56,8 +56,12 @@
 </template>
 
 <script>
+import FooterVue from "./Footer.vue";
 export default {
   name: "HeaderVue",
+  components: {
+    FooterVue
+  },
   data() {
     return {
       toggleNav: false,

@@ -1,28 +1,26 @@
 <template>
-
   <div class="about-content">
-
-    <div class="pb"><img src="@/assets/img/pb.jpg" alt="" /></div>
+    <div class="pb">
+      <img src="@/assets/img/pb.jpg" alt="" />
+      <p>Pic by Jasmin Koç</p>
+    </div>
 
     <div class="bio">
-
       <h3>JOUNS</h3>
 
       <p>
-         Jonas Kunz, a.k.a. Jouns, is an up-and-coming director and director of photography
-        (DP) based in Bern. He picked up his first camera at an early age to film
-        and photograph everything that caught his eye. In 2020, Jonas founded the
-        "Ocular Collective" (
-        <a target="_blank" href="https://ocular.ch">ocular.ch</a>
-        ) together with the like-minded Andrin Schranz and Cedric Ribi.
-        Since then, Jonas has already produced numerous music videos,
-        documentaries, and other types of short films.
+        Jonas Kunz, a.k.a. Jouns, is an up-and-coming director and director of
+        photography (DP) based in Bern. He picked up his first camera at an
+        early age to film and photograph everything that caught his eye. In
+        2020, Jonas founded the "Ocular Collective"
+        <a target="_blank" href="https://ocular.ch">(ocular.ch)</a> together
+        with the like-minded Andrin Schranz and Cedric Ribi. Since then, Jonas
+        has already produced numerous music videos, documentaries, and other
+        types of short films.
       </p>
 
       <div class="sm-cta">
-
         <a class="icon" href="https://instagram.com/joouuns" target="_blank">
-
           <svg
             id="Gruppe_404"
             data-name="Gruppe 404"
@@ -31,7 +29,6 @@
             height="35.2"
             viewBox="0 0 35.25 35.25"
           >
-
             <path
               id="Pfad_653"
               data-name="Pfad 653"
@@ -54,17 +51,12 @@
               d="M17.627,0A17.627,17.627,0,0,0,0,17.627c.928,23.382,34.329,23.375,35.254,0A17.627,17.627,0,0,0,17.627,0Zm9.5,23.033a4.1,4.1,0,0,1-4.1,4.1H12.221a4.1,4.1,0,0,1-4.1-4.1V12.221a4.1,4.1,0,0,1,4.1-4.1H23.033a4.1,4.1,0,0,1,4.1,4.1Z"
               fill="#f5f4f3"
             />
-
           </svg>
-           @joouuns
+          @joouuns
         </a>
-
       </div>
-
     </div>
-
   </div>
-
 </template>
 
 <script>
@@ -78,10 +70,19 @@ export default {};
   align-items: center;
   height: 100vh;
   .pb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3vw;
     img {
       height: 20rem;
       border-radius: 20rem;
-      margin-right: 3vw;
+      margin-top: 3rem;
+    }
+    p {
+      color: #969696;
+      font-size: 0.8rem;
     }
   }
   .bio {
@@ -110,7 +111,7 @@ export default {};
         height: 1.8rem;
         padding-right: 0.3rem;
       }
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -144,4 +145,3 @@ export default {};
   }
 }
 </style>
-

@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Projekte from "../views/ProjectsSite.vue";
 import About from "../views/About.vue";
+import Imprint from "../views/Imprint.vue";
 
 Vue.use(VueRouter);
 
@@ -19,8 +20,13 @@ const routes = [
   },
   {
     path: "/about",
-    name:"About",
+    name: "About",
     component: About
+  },
+  {
+    path: "/imprint",
+    name: "Imprint",
+    component: Imprint
   }
 ];
 
@@ -35,7 +41,7 @@ const router = new VueRouter({
       return { x: 0, y: 0 };
     }
   },
-  
+
   mode: "history",
   base: process.env.BASE_URL,
   routes

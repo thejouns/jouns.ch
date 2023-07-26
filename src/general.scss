@@ -1,8 +1,7 @@
 @import url("https://use.typekit.net/dyt4phh.css");
-body,
-html {
+body {
     font-family: "futura-pt", sans-serif;
-    background-color: transparent;
+    background-color: #141414;
     margin: 0px;
     padding: 0px;
     ::-webkit-scrollbar {
@@ -63,7 +62,7 @@ a:focus {
 
 @media only screen and (max-width: 1024px) {
     h1 {
-        font-size: 23vw;
+        font-size: 15vw;
     }
     .routes {
         font-size: 12vw;
