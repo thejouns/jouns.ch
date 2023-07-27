@@ -16,6 +16,17 @@ Vue.use(VueSmoothScroll, {
 
 Vue.config.productionTip = false;
 
+//import router
+router.beforeEach((to, from, next)=>{
+  // use the language from the routing param or default
+  let language = to.params.lang;
+  if (!language){
+    language = 'en'
+  }
+  i18n.locale = language
+  next()
+})
+
 new Vue({
   router,
   store,
