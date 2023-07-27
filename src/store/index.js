@@ -20,13 +20,13 @@ export default new Vuex.Store({
           { title: "Interview & Director:", name: "Jonas Kunz" },
           {
             title: "Cinematography:",
-            name: "Andrin Schranz & Cedric Ribi <br><br>"
+            name: "Andrin Schranz & Cedric Ribi <br><br>",
           },
           { title: "Lead Editor", name: "Cedric Ribi" },
           { title: "Colorist & Animator", name: "Andrin Schranz" },
-          { title: "Audio & Sound Design", name: "Jonas Kunz" }
+          { title: "Audio & Sound Design", name: "Jonas Kunz" },
         ],
-        video: "https://youtu.be/MM9XUcJ1hBw"
+        video: "https://youtu.be/MM9XUcJ1hBw",
       },
       {
         image: EgauImg,
@@ -35,18 +35,18 @@ export default new Vuex.Store({
           { title: "Musicvideo for:", name: "Jule X & Nicky B Fly <br><br>" },
           { title: "Director & Editor:", name: "Jonas Kunz" },
           { title: "Cinematographer:", name: "Andrin Schranz" },
-          { title: "AC:", name: "Cedric Ribi" }
+          { title: "AC:", name: "Cedric Ribi" },
         ],
-        video: "https://youtu.be/EE4Mr78Wh-E"
+        video: "https://youtu.be/EE4Mr78Wh-E",
       },
       {
         image: friseImg,
         title: "frisä",
         rolls: [
           { title: "Shortfilm for:", name: "Ocular Collective" },
-          { title: "Starring:", name: "Luka Aeschlimann" }
+          { title: "Starring:", name: "Luka Aeschlimann" },
         ],
-        video: "https://youtu.be/T3vn5nujkn8"
+        video: "https://youtu.be/T3vn5nujkn8",
       },
       {
         image: nzImg,
@@ -55,33 +55,33 @@ export default new Vuex.Store({
           { title: "Musicvideo for:", name: "Jaru <br><br>" },
           { title: "Director & Editor:", name: "Jonas Kunz" },
           { title: "Cinematographer:", name: "Andrin Schranz" },
-          { title: "PA:", name: "Luis Schneuwly" }
+          { title: "PA:", name: "Luis Schneuwly" },
         ],
-        video: "https://youtu.be/a3eobSkWqfo"
+        video: "https://youtu.be/a3eobSkWqfo",
       },
       {
         image: NBImg,
         title: "Nils Buri",
         rolls: [
           { title: "Documentary for:", name: "Nils Buri <br><br>" },
-          { title: "Production by:", name: "Ocular Collective" }
+          { title: "Production by:", name: "Ocular Collective" },
         ],
-        video: "https://youtu.be/URoZHHvk4NQ"
-      }
+        video: "https://youtu.be/URoZHHvk4NQ",
+      },
     ],
     imprint: [
       {
         title: "Inhaltliche Verantwortung",
         content:
-          '<strong>ocular KLG</strong><br>Kirchlindachstrasse 15<br>3052 Zollikofen<br><br><a href="mailto:info@ocular.ch">info@ocular.ch</a><br><br>CHE-411.013.552'
+          '<strong>ocular KLG</strong><br>Kirchlindachstrasse 15<br>3052 Zollikofen<br><br><a href="mailto:info@ocular.ch">info@ocular.ch</a><br><br>CHE-411.013.552',
       },
       {
         subSections: [
           {
             title: "Copyright",
             content:
-              "Die Urheber- und alle anderen Rechte an Inhalten wie Bilder, Illustrationen, Videos wie auch Texte oder andere Inhalte auf dieser Website, gehören ausschliesslich Jonas Kunz oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Inhalte ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen."
-          }
+              "Die Urheber- und alle anderen Rechte an Inhalten wie Bilder, Illustrationen, Videos wie auch Texte oder andere Inhalte auf dieser Website, gehören ausschliesslich Jonas Kunz oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Inhalte ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.",
+          },
         ],
         title: "Disclaimer",
         content:
@@ -95,13 +95,13 @@ export default new Vuex.Store({
           {
             title: "Adobe Fonts",
             content:
-              'Wir setzen auf unserer Website Adobe Fonts zur visuellen Gestaltung ein. Adobe Fonts ist ein Dienst der Adobe Systems Incorporated, 345 Park Avenue, San Jose, CA 95110-2704, USA (Adobe), der uns den Zugriff auf eine Schriftartenbibliothek gewährt. Zur Einbindung der von uns benutzten Schriftarten, muss dein Browser eine Verbindung zu einem Server von Adobe in den USA aufbauen und die für unsere Website benötigte Schriftart herunterladen. Adobe erhält hierdurch die Information, dass von Ihrer IP-Adresse unsere Website aufgerufen wurde. Weitere Informationen zu Adobe Fonts, finden Sie in der Datenschutzerklärung von Adobe, welche du unter folgendem Link findest: <a href="https://www.adobe.com/ch_de/privacy/policies/adobe-fonts.html" target="_blank">Adobe Fonts Datenschutzerklärung</a>'
-          }
-        ]
-      }
-    ]
+              'Wir setzen auf unserer Website Adobe Fonts zur visuellen Gestaltung ein. Adobe Fonts ist ein Dienst der Adobe Systems Incorporated, 345 Park Avenue, San Jose, CA 95110-2704, USA (Adobe), der uns den Zugriff auf eine Schriftartenbibliothek gewährt. Zur Einbindung der von uns benutzten Schriftarten, muss dein Browser eine Verbindung zu einem Server von Adobe in den USA aufbauen und die für unsere Website benötigte Schriftart herunterladen. Adobe erhält hierdurch die Information, dass von Ihrer IP-Adresse unsere Website aufgerufen wurde. Weitere Informationen zu Adobe Fonts, finden Sie in der Datenschutzerklärung von Adobe, welche du unter folgendem Link findest: <a href="https://www.adobe.com/ch_de/privacy/policies/adobe-fonts.html" target="_blank">Adobe Fonts Datenschutzerklärung</a>',
+          },
+        ],
+      },
+    ],
   },
   mutations: {},
   actions: {},
-  modules: {}
+  modules: {},
 });

@@ -53,14 +53,14 @@ import { ref } from "vue";
 export default {
   setup() {
     const popupTrigger = ref({
-      buttonTrigger: false
+      buttonTrigger: false,
     });
     const TogglePopup = (trigger) => {
       popupTrigger.value[trigger] = !popupTrigger.value[trigger];
     };
     return {
       popupTrigger,
-      TogglePopup
+      TogglePopup,
     };
   },
 
@@ -70,8 +70,8 @@ export default {
   computed: {
     projects() {
       return this.$store.state.projects;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -96,14 +96,13 @@ export default {
       /* &:nth-child(2n + 2) {
         background-color: #eeeeee;
       }*/
-      &:focus-visible{
+      &:focus-visible {
         outline: solid 1px;
       }
       &:hover {
         .project-img {
           filter: saturate(1);
           scale: 1.005;
-          
         }
       }
     }
@@ -155,7 +154,7 @@ export default {
         svg {
           width: 1rem;
         }
-        &:hover{
+        &:hover {
           text-decoration: underline;
         }
       }

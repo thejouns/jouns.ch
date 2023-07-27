@@ -30,8 +30,8 @@ export default {
     },
     subSection() {
       return this.imprint.subSection;
-    }
-  }
+    },
+  },
 };
 </script>
 

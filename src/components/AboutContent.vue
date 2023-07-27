@@ -7,15 +7,7 @@
     <div class="bio">
       <h3>JOUNS</h3>
 
-      <p>
-        Jonas Kunz, a.k.a. Jouns, is an up-and-coming director and director of
-        photography (DP) based in Bern. He picked up his first camera at an
-        early age to film and photograph everything that caught his eye. In
-        2020, Jonas founded the "Ocular Collective"
-        <a target="_blank" href="https://ocular.ch">(ocular.ch)</a> together
-        with the like-minded Andrin Schranz and Cedric Ribi. Since then, Jonas
-        has already produced numerous music videos, documentaries, and other
-        types of short films.
+      <p v-html="$t('about.text')">
       </p>
 
       <div class="sm-cta">

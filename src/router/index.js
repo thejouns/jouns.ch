@@ -11,23 +11,23 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
   },
   {
     path: "/projects",
     name: "Projekte",
-    component: Projekte
+    component: Projekte,
   },
   {
     path: "/about",
     name: "About",
-    component: About
+    component: About,
   },
   {
     path: "/imprint",
     name: "Imprint",
-    component: Imprint
-  }
+    component: Imprint,
+  },
 ];
 
 const router = new VueRouter({
@@ -35,7 +35,7 @@ const router = new VueRouter({
     if (to.hash) {
       return {
         selector: to.hash,
-        behavior: "smooth"
+        behavior: "smooth",
       };
     } else {
       return { x: 0, y: 0 };
@@ -44,7 +44,7 @@ const router = new VueRouter({
 
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;
