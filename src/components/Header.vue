@@ -33,10 +33,10 @@
       </div>
       <ul class="navbar" v-bind:class="{ navactive: toggleNav }">
         <a class="rou-li" @click.native="navSlide()" href="/">HOME</a>
-        <router-link class="rou-li" @click.native="navSlide()" to="/projects"
-          >PROJEKTE</router-link
+        <router-link class="rou-li" @click.native="navSlide()" :to="`/${$i18n.locale}/projects`"
+          >PROJECTS</router-link
         >
-        <router-link class="rou-li" @click.native="navSlide()" to="/about"
+        <router-link class="rou-li" @click.native="navSlide()" :to="`/${$i18n.locale}/about`"
           >ABOUT</router-link
         >
         <footer-vue @click.native="navSlide()"></footer-vue>
@@ -66,7 +66,7 @@ export default {
     return {
       toggleNav: false,
       headerBoolean: false,
-      scrollPosition: null,
+      scrollPosition: null
     };
   },
   methods: {
@@ -78,14 +78,14 @@ export default {
         console.log("ayyyyo, ds isch gheimi nachricht ... pssshht!");
         this.headerBoolean = true;
       }
-    },
+    }
   },
   created() {
     window.addEventListener("load", this.checkRoute);
   },
   watch: {
-    $route: "checkRoute",
-  },
+    $route: "checkRoute"
+  }
 };
 </script>
 

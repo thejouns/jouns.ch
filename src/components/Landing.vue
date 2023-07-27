@@ -3,13 +3,13 @@
     <div class="centered">
       <h1>JOUNS</h1>
       <div class="cta">
-        <router-link class="link" to="/projects">
+        <router-link class="link" :to="`/${$i18n.locale}/projects`">
           <svg width="20" height="20">
             <path
               d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z"
             />
           </svg>
-          Projekte Ansehen</router-link
+          {{$t('SeeProjects')}}</router-link
         >
       </div>
     </div>
@@ -35,6 +35,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 10;
   .sm-cta {
     height: 10vh;
     display: flex;
@@ -58,7 +59,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
       justify-content: center;
       margin: 0;
       .link {
-        width: 25rem;
+        width: 15rem;
         height: 2rem;
         padding: 1vw;
         color: #f5f4f3;
@@ -102,9 +103,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     .cta {
       justify-content: space-evenly;
       align-content: center;
-      width: 100vw;
       .link {
-        width: 70vw;
         font-size: 6vw;
         text-align: center;
         margin: 5vh 0 5vh 0;
