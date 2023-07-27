@@ -2,7 +2,6 @@
   <div class="about-content">
     <div class="pb">
       <img src="@/assets/img/pb.jpg" alt="" />
-      <p>Pic by Jasmin Koç</p>
     </div>
 
     <div class="bio">
@@ -78,7 +77,6 @@ export default {};
     img {
       height: 20rem;
       border-radius: 20rem;
-      margin-top: 3rem;
     }
     p {
       color: #969696;
