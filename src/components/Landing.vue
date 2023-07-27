@@ -85,7 +85,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     overflow-x: hidden;
     overflow: hidden;
     flex-direction: column;
-    h1{
+    h1 {
       font-size: 23vw;
     }
     .sm-cta {

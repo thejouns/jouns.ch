@@ -10,7 +10,7 @@ export default {
   title: "Jouns - Projekte",
   name: "ProjectsSite",
   components: {
-    ProjectVue
+    ProjectVue,
   },
   computed: {
     projects() {
@@ -20,6 +20,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

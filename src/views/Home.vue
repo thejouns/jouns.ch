@@ -20,12 +20,12 @@ import LandingVue from "@/components/Landing.vue";
 export default {
   title: "Jouns - Portfolio",
   components: {
-    LandingVue
+    LandingVue,
   },
   data() {
     return {
       scrollBoolean: false,
-      scrollPosition: null
+      scrollPosition: null,
     };
   },
   methods: {
@@ -40,11 +40,11 @@ export default {
       } else {
         this.scrollBoolean = true;
       }
-    }
+    },
   },
   created() {
     window.addEventListener("scroll", this.updateScroll);
-  }
+  },
 };
 </script>
 <style lang="scss">

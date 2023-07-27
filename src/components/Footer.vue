@@ -1,16 +1,14 @@
 <template>
   <footer>
-    <router-link class="rou-li" to="Imprint"
-      >Impressum</router-link
-    >
-    <p>&copy; 2024 Jouns</p>
+    <router-link class="rou-li" to="Imprint">Impressum</router-link>
+    <p>&copy; 2023 Jonas Kunz</p>
   </footer>
 </template>
 
 <script>
 export default {
   title: "Jouns - About",
-  components: {}
+  components: {},
 };
 </script>
 

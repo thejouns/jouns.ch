@@ -60,13 +60,13 @@ import FooterVue from "./Footer.vue";
 export default {
   name: "HeaderVue",
   components: {
-    FooterVue
+    FooterVue,
   },
   data() {
     return {
       toggleNav: false,
       headerBoolean: false,
-      scrollPosition: null
+      scrollPosition: null,
     };
   },
   methods: {
@@ -78,14 +78,14 @@ export default {
         console.log("ayyyyo, ds isch gheimi nachricht ... pssshht!");
         this.headerBoolean = true;
       }
-    }
+    },
   },
   created() {
     window.addEventListener("load", this.checkRoute);
   },
   watch: {
-    $route: "checkRoute"
-  }
+    $route: "checkRoute",
+  },
 };
 </script>
 
