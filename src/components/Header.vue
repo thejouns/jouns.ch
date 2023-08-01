@@ -34,7 +34,7 @@
       <ul class="navbar" v-bind:class="{ navactive: toggleNav }">
         <a class="rou-li" @click.native="navSlide()" href="/">HOME</a>
         <router-link class="rou-li" @click.native="navSlide()" to="/projects"
-          >PROJECTS</router-link
+          >PROJEKTE</router-link
         >
         <router-link class="rou-li" @click.native="navSlide()" to="/about"
           >ABOUT</router-link

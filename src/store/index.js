@@ -6,6 +6,7 @@ import tbslImg from "@/assets/img/tn/tbsl-tn.jpg";
 import nzImg from "@/assets/img/tn/jaru-nz.jpg";
 import NBImg from "@/assets/img/tn/NilsBuri-thumbnail.jpg";
 import friseImg from "@/assets/img/tn/frise-tn.jpg";
+import chempaeImg from "@/assets/img/tn/chempae-tn.jpg";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -15,15 +16,15 @@ export default new Vuex.Store({
         image: tbslImg,
         title: "the bittersweet life",
         rolls: [
-          { title: "Documentary for:", name: "Ocular Collective" },
-          { title: "Starring:", name: "Ara Ko<br><br>" },
-          { title: "Interview & Director:", name: "Jonas Kunz" },
+          { title: "Dokumentarfilm für:", name: "Ocular Collective" },
+          { title: "Mit:", name: "Ara Ko<br><br>" },
+          { title: "Interview & Regie:", name: "Jonas Kunz" },
           {
             title: "Cinematography:",
             name: "Andrin Schranz & Cedric Ribi <br><br>"
           },
-          { title: "Lead Editor", name: "Cedric Ribi" },
-          { title: "Colorist & Animator", name: "Andrin Schranz" },
+          { title: "Lead Schnitt:", name: "Cedric Ribi" },
+          { title: "Colorist & Animator:", name: "Andrin Schranz" },
           { title: "Audio & Sound Design", name: "Jonas Kunz" }
         ],
         video: "https://youtu.be/MM9XUcJ1hBw"
@@ -32,19 +33,40 @@ export default new Vuex.Store({
         image: EgauImg,
         title: "Egau",
         rolls: [
-          { title: "Musicvideo for:", name: "Jule X & Nicky B Fly <br><br>" },
-          { title: "Director & Editor:", name: "Jonas Kunz" },
-          { title: "Cinematographer:", name: "Andrin Schranz" },
-          { title: "AC:", name: "Cedric Ribi" }
+          { title: "Musikvideo für:", name: "Jule X & Nicky B Fly <br><br>" },
+          { title: "Regie & Schnitt:", name: "Jonas Kunz" },
+          { title: "DP & Colorist:", name: "Andrin Schranz" },
+          { title: "Kamera:", name: "Cedric Ribi<br><br>" },
+
+
         ],
         video: "https://youtu.be/EE4Mr78Wh-E"
+      },
+      {
+        image: chempaeImg,
+        title: "chempä.",
+        rolls: [
+          { title: "Kurzfilm für:", name: "Ocular Collective" },
+          { title: "Mit:", name: "Jonas Kunz<br><br>" },
+          { title: "Story:", name: "Ocular Collective" },
+          { title: "Regie:", name: "Jonas Kunz" },
+          { title: "Cinematography:", name: "Andrin Schranz & Cedric Ribi" },
+          { title: "PA:", name: "Luka Aeschlimann<br><br>" },
+          { title: "Schnitt & Colorist:", name: "Jonas Kunz" },
+
+        ],
+        video: "https://youtu.be/rdOYQB_9wZ4"
       },
       {
         image: friseImg,
         title: "frisä",
         rolls: [
-          { title: "Shortfilm for:", name: "Ocular Collective" },
-          { title: "Starring:", name: "Luka Aeschlimann" }
+          { title: "Kurzfilm für:", name: "Ocular Collective" },
+          { title: "Mit:", name: "Luka Aeschlimann<br><br>" },
+          { title: "Regie:", name: "Ocular Collective" },
+          { title: "Cinematographer:", name: "Andrin Schranz & Cedric Ribi" },
+          { title: "PA:", name: "Jonas Kunz<br><br>" },
+          { title: "Schnitt & Colorist:", name: "Andrin Schranz" },
         ],
         video: "https://youtu.be/T3vn5nujkn8"
       },
@@ -52,8 +74,8 @@ export default new Vuex.Store({
         image: nzImg,
         title: "nüt ztüe",
         rolls: [
-          { title: "Musicvideo for:", name: "Jaru <br><br>" },
-          { title: "Director & Editor:", name: "Jonas Kunz" },
+          { title: "Musikvideo für:", name: "Jaru <br><br>" },
+          { title: "Regie & Schnitt:", name: "Jonas Kunz" },
           { title: "Cinematographer:", name: "Andrin Schranz" },
           { title: "PA:", name: "Luis Schneuwly" }
         ],
@@ -63,8 +85,8 @@ export default new Vuex.Store({
         image: NBImg,
         title: "Nils Buri",
         rolls: [
-          { title: "Documentary for:", name: "Nils Buri <br><br>" },
-          { title: "Production by:", name: "Ocular Collective" }
+          { title: "Documentary für:", name: "Nils Buri <br><br>" },
+          { title: "Produktion:", name: "Ocular Collective" }
         ],
         video: "https://youtu.be/URoZHHvk4NQ"
       }

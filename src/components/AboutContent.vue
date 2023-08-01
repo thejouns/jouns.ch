@@ -2,21 +2,20 @@
   <div class="about-content">
     <div class="pb">
       <img src="@/assets/img/pb.jpg" alt="" />
-      <p>Pic by Jasmin Koç</p>
     </div>
 
     <div class="bio">
       <h3>JOUNS</h3>
 
       <p>
-        Jonas Kunz, a.k.a. Jouns, is an up-and-coming director and director of
-        photography (DP) based in Bern. He picked up his first camera at an
-        early age to film and photograph everything that caught his eye. In
-        2020, Jonas founded the "Ocular Collective"
-        <a target="_blank" href="https://ocular.ch">(ocular.ch)</a> together
-        with the like-minded Andrin Schranz and Cedric Ribi. Since then, Jonas
-        has already produced numerous music videos, documentaries, and other
-        types of short films.
+        Jonas Kunz, a.k.a. Jouns, ist ein aufstrebender Director und DP in Bern.
+        Schon früh nahm er seine erste Kamera in die Hand, um alles zu filmen
+        und zu fotografieren, was ihm vor die Linse lief. Im Jahr 2020 gründete
+        Jonas zusammen mit den Gleichgesinnten Andrin Schranz und Cedric Ribi
+        das "Ocular Collective"
+        <a target="_blank" href="https://ocular.ch">(ocular.ch)</a>. Seitdem hat
+        Jonas bereits zahlreiche Musikvideos, Dokumentarfilme und sonstige
+        Kurzfilme aller Art realisiert.
       </p>
 
       <div class="sm-cta">
@@ -78,7 +77,6 @@ export default {};
     img {
       height: 20rem;
       border-radius: 20rem;
-      margin-top: 3rem;
     }
     p {
       color: #969696;
@@ -123,6 +121,7 @@ export default {};
     height: 88vh;
     flex-direction: column;
     .pb {
+      margin-right: 0;
       img {
         height: 45vw;
       }
