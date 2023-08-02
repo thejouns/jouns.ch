@@ -24,7 +24,7 @@ export default new Vuex.Store({
             name: "Andrin Schranz & Cedric Ribi <br><br>"
           },
           { title: "Lead Schnitt:", name: "Cedric Ribi" },
-          { title: "Colorist & Animator:", name: "Andrin Schranz" },
+          { title: "Farben & Animation:", name: "Andrin Schranz" },
           { title: "Audio & Sound Design", name: "Jonas Kunz" }
         ],
         video: "https://youtu.be/MM9XUcJ1hBw"
@@ -35,7 +35,7 @@ export default new Vuex.Store({
         rolls: [
           { title: "Musikvideo für:", name: "Jule X & Nicky B Fly <br><br>" },
           { title: "Regie & Schnitt:", name: "Jonas Kunz" },
-          { title: "DP & Colorist:", name: "Andrin Schranz" },
+          { title: "DoP & Colorist:", name: "Andrin Schranz" },
           { title: "Kamera:", name: "Cedric Ribi<br><br>" },
 
 

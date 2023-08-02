@@ -5,6 +5,7 @@
         v-for="(project, index) in projects.slice(6 - projects.length - 6)"
         :key="index"
         class="project-container"
+        onclick=""
       >
         <div
           class="project-img"
@@ -99,7 +100,7 @@ export default {
       &:focus-visible{
         outline: solid 1px;
       }
-      &:hover {
+      &:hover, &:active {
         .project-img {
           filter: saturate(1);
           scale: 1.005;
