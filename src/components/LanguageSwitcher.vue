@@ -51,11 +51,11 @@ export default {
     margin: 3vw;
     outline: none;
     padding: 1rem;
-    width: 8rem;
+    width: 6rem;
     text-transform: uppercase;
     background: transparent;
     color: #f5f4f3;
-    font-size: 3rem;
+    font-size: 2rem;
     option {
       font-size: 1rem;
       
@@ -66,4 +66,11 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .wrapper{
+    .lang-drop{
+      width: 8rem;
+    font-size: 3rem;
+  }
+}}
 </style>
