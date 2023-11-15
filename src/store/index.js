@@ -7,11 +7,29 @@ import nzImg from "@/assets/img/tn/jaru-nz.jpg";
 import NBImg from "@/assets/img/tn/NilsBuri-thumbnail.jpg";
 import friseImg from "@/assets/img/tn/frise-tn.jpg";
 import chempaeImg from "@/assets/img/tn/chempae-tn.jpg";
+import sdImg from "@/assets/img/tn/sd-tn.jpg";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     projects: [
+      {
+        image: sdImg,
+        title: `"Slow Down!"`,
+        rolls:[
+          {title: "Musikvideo für:", name: "LocY<br><br>"},
+          {title: "Director & Schnitt:", name: "Jonas Kunz"},
+          {title: "Co-Director:", name: "LocY & Minako Bisang"},
+          {title: "DoP & Colorist:", name: "Andrin Schranz<br><br>"},
+          {title: "1st AC:", name: "Noel Gygax"},
+          {title: "Animation:", name: "Minako Bisang & Ysabel Steiner"},
+          {title: "Makeup:", name: "Sarah Walker"},
+          {title: "PAs:", name: "Feride Saljmanaj, Jasmin Angelina & Minako Bisang"},
+          {title: "Styling:", name: "Reya Amalia"}
+        ],
+        video: "https://youtu.be/3oSUMN9nUDw?si=kPboeA3gEaUnDr4i"
+
+      },
       {
         image: tbslImg,
         title: "the bittersweet life",
