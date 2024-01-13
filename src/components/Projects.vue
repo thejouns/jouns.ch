@@ -43,36 +43,41 @@
             </svg>
             Projekt Anschauen</a
           >
+          <button @click="() => togglePopup('buttonTrigger')"> mehr anzeigen </button>
         </div>
       </div>
     </div>
+    <pop-up :TogglePopup="()=>togglePopup('buttonTrigger')" v-if="popupTrigger.buttonTrigger">
+    <h1> </h1>
+    </pop-up>
   </div>
 </template>
 
 <script>
 import { ref } from "vue";
+import PopUp from "./PopUp.vue";
 export default {
+  title: "Jouns - Projekte",
+  name: "ProjectsVue",
+  components: { PopUp },
   setup() {
     const popupTrigger = ref({
-      buttonTrigger: false
+      buttonTrigger: false,
     });
-    const TogglePopup = (trigger) => {
+    const togglePopup = (trigger) => {
       popupTrigger.value[trigger] = !popupTrigger.value[trigger];
     };
     return {
+      PopUp,
       popupTrigger,
-      TogglePopup
+      togglePopup,
     };
   },
-
-  title: "Jouns - Projekte",
-  name: "ProjectsVue",
-  components: {},
   computed: {
     projects() {
       return this.$store.state.projects;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -97,14 +102,14 @@ export default {
       /* &:nth-child(2n + 2) {
         background-color: #eeeeee;
       }*/
-      &:focus-visible{
+      &:focus-visible {
         outline: solid 1px;
       }
-      &:hover, &:active {
+      &:hover,
+      &:active {
         .project-img {
           filter: saturate(1);
           scale: 1.005;
-          
         }
       }
     }
@@ -156,7 +161,7 @@ export default {
         svg {
           width: 1rem;
         }
-        &:hover{
+        &:hover {
           text-decoration: underline;
         }
       }
