@@ -32,7 +32,7 @@
         </a>
       </div>
       <ul class="navbar" v-bind:class="{ navactive: toggleNav }">
-        <a class="rou-li" @click.native="navSlide()" href="/">HOME</a>
+        <a class="rou-li" href="/">HOME</a>
         <router-link class="rou-li" @click.native="navSlide()" to="/projects"
           >PROJEKTE</router-link
         >
