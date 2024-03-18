@@ -5,6 +5,7 @@
         v-for="(project, index) in projects.slice(6 - projects.length - 6)"
         :key="index"
         class="project-container"
+        onclick=""
       >
         <div
           class="project-img"
@@ -50,23 +51,27 @@
 
 <script>
 import { ref } from "vue";
+import PopUp from "./PopUp.vue";
 export default {
+  title: "Jouns - Projekte",
+  name: "ProjectsVue",
   setup() {
     const popupTrigger = ref({
       buttonTrigger: false,
     });
-    const TogglePopup = (trigger) => {
+    const togglePopup = (trigger) => {
       popupTrigger.value[trigger] = !popupTrigger.value[trigger];
     };
     return {
+      PopUp,
       popupTrigger,
+<<<<<<< HEAD
       TogglePopup,
+=======
+      togglePopup,
+>>>>>>> current-dev
     };
   },
-
-  title: "Jouns - Projekte",
-  name: "ProjectsVue",
-  components: {},
   computed: {
     projects() {
       return this.$store.state.projects;
@@ -99,7 +104,8 @@ export default {
       &:focus-visible {
         outline: solid 1px;
       }
-      &:hover {
+      &:hover,
+      &:active {
         .project-img {
           filter: saturate(1);
           scale: 1.005;

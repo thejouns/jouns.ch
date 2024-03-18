@@ -46,6 +46,18 @@ export default {
   .imp-section {
     width: 60vw;
     padding: 0vw 10vw 2vw 10vw;
+    p{
+      letter-spacing: 0.05rem;
+      line-height: 1.7rem;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .imprint{
+    .imp-section{
+      width: 80vw;
+      
+    }
   }
 }
 </style>

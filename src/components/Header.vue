@@ -33,10 +33,10 @@
       </div>
       <ul class="navbar" v-bind:class="{ navactive: toggleNav }">
         <a class="rou-li" @click.native="navSlide()" href="/">HOME</a>
-        <router-link class="rou-li" @click.native="navSlide()" :to="`/${$i18n.locale}/projects`"
-          >PROJECTS</router-link
+        <router-link class="rou-li" @click.native="navSlide()" to="/projects"
+          >PROJEKTE</router-link
         >
-        <router-link class="rou-li" @click.native="navSlide()" :to="`/${$i18n.locale}/about`"
+        <router-link class="rou-li" @click.native="navSlide()" to="/about"
           >ABOUT</router-link
         >
         <footer-vue @click.native="navSlide()"></footer-vue>
@@ -60,7 +60,7 @@ import FooterVue from "./Footer.vue";
 export default {
   name: "HeaderVue",
   components: {
-    FooterVue,
+    FooterVue
   },
   data() {
     return {
