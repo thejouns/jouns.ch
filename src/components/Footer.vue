@@ -3,7 +3,7 @@
     <router-link class="rou-li" to="Imprint"
       >Impressum</router-link
     >
-    <p>&copy; 2023 Jonas Kunz</p>
+    <p>&copy; 2024 Jouns</p>
   </footer>
 </template>
 

@@ -43,13 +43,9 @@
             </svg>
             Projekt Anschauen</a
           >
-          <button @click="() => togglePopup('buttonTrigger')"> mehr anzeigen </button>
         </div>
       </div>
     </div>
-    <pop-up :TogglePopup="()=>togglePopup('buttonTrigger')" v-if="popupTrigger.buttonTrigger">
-    <h1> </h1>
-    </pop-up>
   </div>
 </template>
 
@@ -59,7 +55,6 @@ import PopUp from "./PopUp.vue";
 export default {
   title: "Jouns - Projekte",
   name: "ProjectsVue",
-  components: { PopUp },
   setup() {
     const popupTrigger = ref({
       buttonTrigger: false,

@@ -8,7 +8,7 @@
       <h3>JOUNS</h3>
 
       <p>
-        Jonas Kunz, a.k.a. Jouns, ist ein aufstrebender Director und DP in Bern.
+        Jonas Kunz, a.k.a. Jouns, ist ein aufstrebender Director in Bern.
         Schon früh nahm er seine erste Kamera in die Hand, um alles zu filmen
         und zu fotografieren, was ihm vor die Linse lief. Im Jahr 2020 gründete
         Jonas zusammen mit den Gleichgesinnten Andrin Schranz und Cedric Ribi

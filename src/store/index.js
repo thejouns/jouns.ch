@@ -43,7 +43,7 @@ export default new Vuex.Store({
           },
           { title: "Lead Schnitt:", name: "Cedric Ribi" },
           { title: "Farben & Animation:", name: "Andrin Schranz" },
-          { title: "Audio & Sound Design", name: "Jonas Kunz" }
+          { title: "Audio & Sound Design:", name: "Jonas Kunz" }
         ],
         video: "https://youtu.be/MM9XUcJ1hBw"
       },
