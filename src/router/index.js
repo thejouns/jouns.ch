@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Projekte from "../views/ProjectsSite.vue";
 import About from "../views/About.vue";
 import Imprint from "../views/Imprint.vue";
+import PopUp from "../components/PopUp.vue";
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,11 @@ const routes = [
     component: Projekte
   },
   {
+    path: "/projects/:projName",
+    name: "PopUp",
+    component: PopUp
+  },
+  {
     path: "/about",
     name: "About",
     component: About
@@ -31,15 +37,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  scrollBehavior(to) {
-    if (to.hash) {
-      return {
-        selector: to.hash,
-        behavior: "smooth"
-      };
-    } else {
-      return { x: 0, y: 0 };
-    }
+  scrollBehavior(to, from, savedPosition) {
+    return savedPosition|| {top:0, behavior:'smooth'}
   },
 
   mode: "history",

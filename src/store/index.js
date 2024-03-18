@@ -27,6 +27,7 @@ export default new Vuex.Store({
           {title: "PAs:", name: "Feride Saljmanaj, Jasmin Angelina & Minako Bisang"},
           {title: "Styling:", name: "Reya Amalia"}
         ],
+        path: "slow-down",
         video: "https://youtu.be/3oSUMN9nUDw?si=kPboeA3gEaUnDr4i"
 
       },
@@ -45,6 +46,7 @@ export default new Vuex.Store({
           { title: "Farben & Animation:", name: "Andrin Schranz" },
           { title: "Audio & Sound Design", name: "Jonas Kunz" }
         ],
+        path: "tbsl",
         video: "https://youtu.be/MM9XUcJ1hBw"
       },
       {
@@ -55,9 +57,8 @@ export default new Vuex.Store({
           { title: "Regie & Schnitt:", name: "Jonas Kunz" },
           { title: "DoP & Colorist:", name: "Andrin Schranz" },
           { title: "Kamera:", name: "Cedric Ribi<br><br>" },
-
-
         ],
+        path: "egau",
         video: "https://youtu.be/EE4Mr78Wh-E"
       },
       {
@@ -71,8 +72,8 @@ export default new Vuex.Store({
           { title: "Cinematography:", name: "Andrin Schranz & Cedric Ribi" },
           { title: "PA:", name: "Luka Aeschlimann<br><br>" },
           { title: "Schnitt & Colorist:", name: "Jonas Kunz" },
-
         ],
+        path: "chempae",
         video: "https://youtu.be/rdOYQB_9wZ4"
       },
       {
@@ -86,6 +87,7 @@ export default new Vuex.Store({
           { title: "PA:", name: "Jonas Kunz<br><br>" },
           { title: "Schnitt & Colorist:", name: "Andrin Schranz" },
         ],
+        path: "frisae",
         video: "https://youtu.be/T3vn5nujkn8"
       },
       {
@@ -97,6 +99,7 @@ export default new Vuex.Store({
           { title: "Cinematographer:", name: "Andrin Schranz" },
           { title: "PA:", name: "Luis Schneuwly" }
         ],
+        path: "nz",
         video: "https://youtu.be/a3eobSkWqfo"
       },
       {
@@ -106,6 +109,7 @@ export default new Vuex.Store({
           { title: "Documentary für:", name: "Nils Buri <br><br>" },
           { title: "Produktion:", name: "Ocular Collective" }
         ],
+        path: "nils-buri",
         video: "https://youtu.be/URoZHHvk4NQ"
       }
     ],

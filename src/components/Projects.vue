@@ -1,30 +1,20 @@
 <template>
   <div id="projects">
     <div class="project-grid">
-      <div
+      <router-link
         v-for="(project, index) in projects.slice(6 - projects.length - 6)"
         :key="index"
         class="project-container"
-        onclick=""
+        :to="`projects/${project.path}`"
       >
         <div
           class="project-img"
           :style="{ backgroundImage: `url(&quot;${project.image}&quot;)` }"
+          
         ></div>
         <div class="proj-text">
           <h1>{{ project.title }}</h1>
-          <table class="rolls">
-            <tr
-              class="roll"
-              v-for="(roll, index) in project.rolls"
-              :key="index"
-            >
-              <td class="roll-title">
-                <b>{{ roll.title }}</b>
-              </td>
-              <td v-html="roll.name"></td>
-            </tr>
-          </table>
+         
           <a
             class="watchButton"
             target="_blank"
@@ -43,9 +33,9 @@
             </svg>
             Projekt Anschauen</a
           >
-          <button @click="() => togglePopup('buttonTrigger')"> mehr anzeigen </button>
+
         </div>
-      </div>
+      </router-link>
     </div>
     <pop-up :TogglePopup="()=>togglePopup('buttonTrigger')" v-if="popupTrigger.buttonTrigger">
     <h1> </h1>
@@ -83,6 +73,7 @@ export default {
 
 <style lang="scss">
 #projects {
+  z-index: 1;
   .project-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -142,7 +133,7 @@ export default {
       h1 {
         color: #f5f4f3;
         text-transform: uppercase;
-        font-size: 2.5vw;
+        font-size: 3vw;
       }
       table {
         width: 90%;
