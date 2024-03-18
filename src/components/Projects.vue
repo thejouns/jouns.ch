@@ -65,11 +65,7 @@ export default {
     return {
       PopUp,
       popupTrigger,
-<<<<<<< HEAD
-      TogglePopup,
-=======
-      togglePopup,
->>>>>>> current-dev
+      togglePopup
     };
   },
   computed: {

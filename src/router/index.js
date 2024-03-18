@@ -4,22 +4,10 @@ import Home from "../views/Home.vue";
 import Projekte from "../views/ProjectsSite.vue";
 import About from "../views/About.vue";
 import Imprint from "../views/Imprint.vue";
-import i18n from "../i18n"
 
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: '/',
-    redirect: `/${i18n.locale}`,
-  },
-  {
-    path: "/:lang",
-    component: {
-      render(c){return c('router-view')}
-    },
-    children: [
-  
   {
     path: "/",
     name: "Home",
@@ -39,7 +27,7 @@ const routes = [
     path: "imprint",
     name: "Imprint",
     component: Imprint,
-  },]}
+  },
 ];
 
 const router = new VueRouter({
